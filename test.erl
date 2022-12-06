@@ -4,7 +4,7 @@
 main() -> 
     Qs = create_n(0.6, 0.8, [], 1000),
     Measurements = measure_n(Qs),
-    io:fwrite("Averages = ~w.~n", [avg(Measurements)]).
+    io:fwrite("Average = ~w.~n", [avg(Measurements)]).
 
 create_n(_A, _B, Qubits, 0) ->
     Qubits;
